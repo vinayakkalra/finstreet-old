@@ -155,3 +155,96 @@
 }
 
 /*footer desktop end*/
+
+/*FOOTER MOBILE*/
+
+
+ .req {
+            border: 1px solid #00ABC9;
+
+        }
+
+        .bottom_nav {
+            color: #7a7a7a;
+            margin-right: 27px;
+            margin-left: 27px;
+            font-weight: 700;
+
+
+        }
+
+        .tagcloud {
+            color: #ffffff;
+            border: 1px solid #4b5056;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin: 0px 6px 0px 0px;
+            opacity: 0.7;
+            float: left;
+            position: relative;
+            float: left;
+            overflow: hidden;
+            font-size: 11px;
+            font-weight: 600;
+            /* font-family: "Montserrat"; */
+
+            padding: 4px 15px;
+            margin: 6px 4px 6px 0;
+            z-index: 1;
+            text-transform: uppercase;
+            
+        }
+
+        #intro {
+            border: 0.7px solid #3b4147;
+            width: 92%;
+
+            margin: 3%;
+        }
+
+        .vl {
+            border-left: 1px solid #7a7a7a;
+            height: 17px;
+
+            display: -webkit-inline-box;
+        }
+/*FOOTER MOBILE END*/
+
+/*MOBILE HEADER*/
+   #header {
+           
+            background-color: rgb(20, 26, 58);
+            /* Grey background */
+            /* padding: 50px 10px; */
+            /* Some padding */
+            color: black;
+            text-align: center;
+            /* Centered text */
+            /* font-size: 90px; */
+            /* Big font size */
+            /* font-weight: bold; */
+            position: fixed;
+            /* Fixed position - sit on top of the page */
+            top: 0;
+            width: 100%;
+            /* Full width */
+            transition: 0.8s;
+            /* Add a transition effect (when scrolling - and font size is decreased) */
+            height: 92px;
+            
+        }
+
+        .nav-link{
+            float: left;
+            font-size: 13px;
+            color: rgba(255,255,255,.5) !important;
+            font-weight: 600;
+           
+        }
+
+        .nav-item{
+            background-color: rgb(20, 26, 58);
+            padding-left: 20px;
+        }
+
+/*header mobile end*/
