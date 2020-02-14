@@ -1,6 +1,7 @@
 <body>
     <div class="first-container">
-        <div class="nav-container solid solid-nav" id="shrink" style="height: 102px; z-index: 1;">
+        <div class="nav-container solid solid-nav " id="shrink" style="height: 102px;
+        z-index: 1;">
             <div class="nav-row">
                 <div class="nav-logo">
                     <a href="#">
@@ -8,18 +9,25 @@
                     </a>
                 </div>
                 <div class="nav-controls">
-                    <a href="#">Home</a>
+                    <a  href="#">Home</a>
                     <a href="#">About Us</a>
                     <a href="#">Events</a>
                     <a href="#">Courses</a>
                     <a href="#">Contact Us</a>
-                    <button style="margin: auto 35px; background-color: #3a79f9; border-radius: 20px;" type="button" class="btn btn-primary">Book Event</button>
+                    <button style="margin: auto 35px; background-color: #3a79f9; border-radius: 20px;" type="button"
+                        class="btn btn-primary">Book Event</button>
 
                 </div>
 
             </div>
         </div>
     </div>
+<!-- 
+    <div class="container" >
+        <div class="row">
+
+        </div>
+    </div> -->
 
 
 
@@ -51,6 +59,7 @@
     function scrollFunction() {
         if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
             document.getElementById("shrink").style.height = "80px";
+            
         } else {
             document.getElementById("shrink").style.height = "102px";
         }
