@@ -1,0 +1,163 @@
+/*header desktop*/
+
+
+html,
+body {
+    height: 100%;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+.navr a {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.125s linear;
+}
+
+.navr a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.125s linear;
+}
+
+.navr a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.first-container {
+    background: url(images/bg-woman-standing.jpg) no-repeat center center;
+    background-color: rgba(20, 18, 59, 0.603);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container {
+
+    width: 100%;
+    position: fixed;
+    color: white;
+    letter-spacing: 0.025em;
+    transition: background-color 0.1s linear;
+    transition: all 0.4s ease;
+}
+
+#shrink{
+    height: 102px;
+    transition: all 0.8s ease;
+}
+
+.nav-container.solid-nav {
+    background-color: rgb(20, 26, 58);
+    transition: background-color 0.2s linear;
+}
+
+.nav-container .nav-row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.nav-container .nav-row .nav-logo {
+    display: inline-block;
+    font-weight: 900;
+    
+}
+
+.nav-container .nav-row .nav-controls {
+    float: right;
+}
+
+.nav-container .nav-row .nav-controls a {
+    padding-left: 20px;
+    color: rgba(255,255,255,.5);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
+    font-weight: 600;
+}
+
+.container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 0.200rem 1rem;
+}
+
+
+/*header desktop end*/
+
+/*footer desktop-*/
+
+.req {
+    border: 1px solid #00ABC9;
+    display: inline-block;
+
+
+
+
+}
+
+.vl {
+    border-left: 1px solid #7a7a7a;
+    height: 10px;
+
+    display: -webkit-inline-box;
+}
+
+
+
+
+
+.cloud {
+
+    background-color: white;
+
+}
+
+.bottom_nav {
+    color: #7a7a7a;
+    margin-right: 17px;
+    font-weight: 700;
+    margin-left: 17px;
+
+
+}
+
+
+
+.widget.widget_tag_cloud .tagcloud a {
+    color: #ffffff;
+    border: 1px solid #4b5056;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 5px 18px;
+    margin: 0 6px 9px 0;
+    opacity: 0.7;
+    float: left;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/*footer desktop end*/

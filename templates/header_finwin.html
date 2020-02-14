@@ -1,0 +1,67 @@
+<body>
+    <div class="first-container">
+        <div class="nav-container " id="shrink">
+            <div class="nav-row">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="images/finstreet_resized.png" alt="">
+                    </a>
+                </div>
+                <div class="nav-controls">
+                    <a id="navr" href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Contact Us</a>
+                    <button style="margin: auto 35px; background-color: #3a79f9; border-radius: 20px;" type="button"
+                        class="btn btn-primary">Book Event</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="height: 2000px;">
+        <div class="row">
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+
+            var height = $('.first-container').height();
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop >= height - 40) {
+                $('.nav-container').addClass('solid-nav');
+            } else {
+                $('.nav-container').removeClass('solid-nav');
+            }
+
+        });
+    });
+</script>
+<script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
+            document.getElementById("shrink").style.height = "80px";
+        } else {
+            document.getElementById("shrink").style.height = "102px";
+        }
+    }
+</script>
+
+</html>
