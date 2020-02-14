@@ -57,28 +57,11 @@
     <title>Home | QuadB Designs</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/stylee.css">
     <style type="text/css">
         /* custom css for the page */
-        .slider-button {
-            color: #FFFFFF;
-            font-size: 26px;
-            font-family: europhonic;
-            opacity: 1;
-            line-height: 31px;
-            width: 368px;
-            height: 55px;
-            font-family: source-sans-pro, sans-serif;
-            font-size: 30px;
-            border-radius: 10px;
-            font-weight: 400;
-            bottom: 10px;
-            background-color: #284B7D;
-            border: 0 solid;
-            border-radius: 28px;
-        }
-
         .heading {
-            width: 80%;
+            width: 100%;
             height: 100%;
             background: transparent;
             position: absolute;
@@ -113,157 +96,222 @@
             /* display: flex; */
         }
 
-        .texthead {
-            background-color: transparent;
-            position: absolute;
-            top: 50%;
-            margin-top: 10px;
-            top: 50%;
-            width: 30.55%;
-            transform: translate(0px, -50%);
-        }
-
-        .text1 {
-            font-weight: 700;
-            font-size: 29px;
-            padding: 0px 10px 0px 13px;
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            text-align: left;
-            line-height: 35px;
-            margin-bottom: 0px;
-        }
-
-        .text2 {
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 26px;
-            padding-left: 13px;
-            padding: 0px 10px 0px 13px;
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            text-align: left;
-            margin-bottom: 0px;
-        }
-
-        .org-text {
-            color: #FFB232;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 450;
-            padding: 0px;
-            font-size: 25px;
-            margin-bottom: 0px;
-        }
-
-        .grey-text {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 450;
-            padding: 0px;
-            font-size: 25px;
-            margin-bottom: 0px;
-            text-indent: 15px;
-        }
-
         .hr-line {
             opacity: 0.2;
             background-color: #7F7F7F;
             height: 10px;
         }
 
-        .grey-text2 {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-size: 23px;
-            font-weight: 600;
-            text-align: left;
-            padding: 0px;
-        }
-
-        .grey-text3 {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-size: 23px;
-            font-weight: 400;
-            text-align: left;
-            padding: 0px;
-        }
-
-        .grey-text4 {
-            line-height: 30px;
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 400;
-            text-align: left;
-            padding: 0px;
-            font-size: 25px;
-        }
-
-        .grey-text5 {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 41px;
-            font-weight: 700;
-            font-size: 32px;
-        }
-
-        .orgstrip {
-            height: 112px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            opacity: 0.75;
-            background-color: #FF5F0B;
-            margin-top: 384px;
-        }
-
-        .dragn-text {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-        }
-
-        .white2 {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 41px;
-            font-size: 34px;
-            font-weight: 900;
-        }
-
-        .white1 {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 43px;
-            font-size: 36px;
-            font-weight: 600;
-        }
-
-        .last-text1 {
-            color: #58585A;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        .last-textspan {
-            color: #58585A;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        .headertext {
+            animation-duration: .7s;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff !important;
+            line-height: 34px;
             font-size: 24px;
+            font-weight: 500;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .headerbtn1 {
+            animation-duration: .7s;
+            border-radius: 10px !important;
+            letter-spacing: 2px;
+            margin-right: 20px;
+            border-radius: 0px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: 0px 27px 0px 33px;
+            font-size: 15px;
+            line-height: 53px;
+        }
+
+        .banner1text1 {
+            color: #fff;
+            font-family: Montserrat-Bold;
+            font-size: 29px;
+            text-transform: uppercase;
+            line-height: 1.5;
             font-weight: bold;
-            line-height: 29px;
         }
 
-        .slider-button:hover {
-            background-color: white;
-            color: #284B7D;
-            border: #284B7D 2px solid;
-            border-radius: 28px;
-
+        .banner1text2 {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            font-weight: 500;
         }
 
-        /* custom css for the mobile page */
+        .bannerbooknow {
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 2px 2px 4px #58585a;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            -spacing: 1px;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: 0px 27px 0px 33px;
+            font-size: 15px;
+            line-height: 53px;
+            color: #777;
+            letter-spacing: 2px;
+            border-radius: 10px !important;
+        }
+
+        .aboutheading {
+            border-bottom: 5px solid #142b51;
+            width: 90%;
+            font-family: Montserrat-Bold;
+            font-size: 28px;
+            font-weight: 700 !important;
+            margin-bottom: 5px;
+            color: #2b323a;
+            line-height: 1.5;
+        }
+
+        .aboutcontent {
+            margin-top: 10px;
+            color: #777777;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .aboutbtn {
+            border-radius: 10px !important;
+            border-radius: 10px !important;
+            box-shadow: 2px 2px 4px #58585a;
+            border-radius: 0px;
+            padding: 10px 30px;
+            font-size: 15px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff;
+            background-color: #142b51;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+        }
+
+        .eventbtn {
+            border-radius: 10px !important;
+            box-shadow: .2px .2px 2px #58585a;
+            padding: 10px 30px;
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #fff;
+            background-color: #00abc9;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+        }
+
+        .courses {
+            border-bottom: 5px solid #142b51;
+            font-family: Montserrat-Bold;
+            font-size: 44px;
+            font-weight: 700 !important;
+            margin-bottom: 5px;
+            font-weight: bolder;
+            color: #2b323a;
+        }
+
+        .coursestext1 {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: #2b323a;
+        }
+
+        .coursestext2 {
+            font-size: 16px;
+            color: #777;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .textcoursesview {
+            box-shadow: 2px 2px 4px #58585a;
+            background-color: #142b51;
+            color: white;
+            font-size: 16px;
+            font-family: Montserrat, sans-serif;
+            padding: 16px 32px;
+        }
+
+        .coursebtn {
+            border-radius: 10px !important;
+            letter-spacing: 2px;
+            box-shadow: 2px 2px 4px #58585a;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            -spacing: 1px;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: 0px 27px 0px 33px;
+            font-size: 15px;
+            line-height: 53px;
+            background-color: #00abc9;
+            color: #fff;
+        }
+
+        .youtubetextli {
+            height: 70px;
+            padding: 4px 10px;
+        }
+
+        .youtubetextdiv {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+
+        .blogshead {
+            letter-spacing: 2px;
+            border-bottom: 5px solid #142b51;
+            font-family: Montserrat-Bold;
+            font-size: 30px;
+            font-weight: 700 !important;
+            margin-bottom: 5px;
+            font-weight: bolder;
+            color: #2b323a;
+        }
+
+        .contactusbtn {
+            border-radius: 10px !important;
+            letter-spacing: 2px;
+            box-shadow: 2px 2px 4px #58585a;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            -spacing: 1px;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: 0px 27px 0px 33px;
+            font-size: 15px;
+            line-height: 53px;
+            background-color: #fff;
+            color: #777;
+        }
 
         .headingmob {
             width: 100%;
@@ -275,357 +323,61 @@
             margin-top: 154px;
         }
 
-        .textheadmob {
-            background-color: transparent;
-            height: 52px;
-            position: absolute;
-            top: -.0px;
-            margin-top: 165px;
-            top: -px;
-            width: 100%;
-        }
-
-        .text1mob {
-            font-size: 18px;
-            text-align: center;
-            line-height: 22px;
-            font-weight: 700;
-            color: #FFFFFF;
-            padding: 0px 10px 0px 0px;
-            font-family: source-sans-pro, sans-serif;
-            margin-bottom: 0px;
-        }
-
-        .text2mob {
-            font-size: 11px;
-            text-align: center;
-            line-height: 13px;
-            font-weight: 400;
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            margin-bottom: 0px;
-        }
-
-        .slider-buttonmob:hover {
-
-            background-color: white;
-            color: #284B7D;
-            border: #284B7D 2px solid;
-            border-radius: 28px;
-
-        }
-
-        .slider-buttonmob {
-            color: #FFFFFF;
-            font-size: 26px;
-            font-family: europhonic;
-            opacity: 1;
-            line-height: 17px;
-            width: 182px;
-            height: 47px;
-            font-family: source-sans-pro, sans-serif;
-            font-size: 14px;
-            border-radius: 10px;
-            font-weight: 400;
-            bottom: 10px;
-            background-color: #284B7D;
-            border: 0 solid;
-            border-radius: 28px;
-        }
-
-        .hr-linemob {
-            opacity: 0.2;
-            background-color: #7F7F7F;
-            height: 10px;
-        }
-
-        .org-textmob {
-            color: #FFB232;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 450;
-            font-size: 20px;
-            margin-bottom: 0px;
-            line-height: 29px;
-        }
-
-        .grey-textmob {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 450;
-            margin-bottom: 0px;
-            font-size: 12px;
-            line-height: 17px;
-        }
-
-        .grey-text2mob {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 600;
-            text-align: left;
-            font-size: 13px;
-            padding-right: 5px;
-            padding-left: 10px;
-        }
-
-        .grey-text3mob {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 400;
-            text-align: left;
-            padding: 0px;
-            font-size: 13px;
-            padding-right: 5px;
-            padding-left: 10px;
-        }
-
-        .grey-text4mob {
-            line-height: 17px;
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 400;
-            padding: 0px;
-            font-size: 14px;
-        }
-
-        .grey-text5mob {
-            color: #58585A;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 17px;
-            font-weight: 700;
-            font-size: 14px;
-        }
-
-        .orgstripmob {
-            height: 52px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            opacity: 0.85;
-            background-color: #FF5F0B;
-            margin-top: 60px;
-        }
-
-        .orgstripmob2 {
-            background-color: transparent;
-            height: 40px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            width: 100%;
-            margin-top: 66px;
-        }
-
-        .dragn-textmob {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-            text-align: center;
-            line-height: 20px;
-        }
-
-        .white2mob {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 17px;
-            font-size: 12px;
-            font-weight: 900;
-        }
-
-        .white1mob {
-            color: #FFFFFF;
-            font-family: source-sans-pro, sans-serif;
-            line-height: 17px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        #desktop-navbar {
-            width: 100%;
-            opacity: 1;
-            z-index: 9;
-            top: 0px;
-            background-color: white;
-        }
-
-        #mobile-navbar {
-            width: 100%;
-            opacity: 1;
-            z-index: 9;
-            top: 0px;
-            background-color: white;
-        }
-
-        .signinn {
-            font-size: 44px;
-            line-height: 53px;
-            text-align: center;
-            font-weight: bold;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            color: #58585A;
-            margin-top: 20px;
-        }
-
-        .headertext1 {
-            text-align: center;
-            font-size: 30px;
-            line-height: 36px;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 600;
-            background-color: transparent;
-            color: #58585A;
-        }
-
-        .headertext2 {
-            font-size: 26px;
-            line-height: 31px;
-            font-weight: 900;
-            font-family: source-sans-pro, sans-serif;
-            color: #58585A;
-            background-color: transparent;
-            text-align: center;
-        }
-
-        .headertext3 {
-            background-color: transparent;
-            color: #58585A;
-            text-align: center;
-            font-size: 20px;
-            line-height: 24px;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .headertext4 {
-            color: #888787;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            text-align: center;
-            opacity: 1;
-            line-height: 26px;
-            font-size: 22px;
-            margin: 0 25px;
-        }
-
-        .signinnmob {
-            color: #7F7F7F;
-            text-align: right;
-            font-size: 18px;
-            line-height: 18px;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        #drawer {
-            -webkit-animation-duration: 0.8s;
-            animation-duration: 0.8s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            -webkit-animation-name: slideLeft;
-            animation-name: slideLeft;
-        }
-
-        @-webkit-keyframes slideLeft {
-            0% {
-                margin-left: -100%;
-            }
-
-            100% {
-                margin-left: 0%;
-            }
-        }
-
-        @keyframes slideLeft {
-            0% {
-                margin-left: -100%;
-            }
-
-            100% {
-                margin-left: 0%;
-            }
-        }
-
-        .hovrr:hover {
-            color: #f1f1f1;
-        }
-
+        /* mobile css */
         .headertext1mob {
-            text-align: center;
-            font-size: 14px;
-            color: #7F7F7F;
-            font-family: source-sans-pro, sans-serif;
-            font-weight: 600;
+
+            color: #fff !important;
+            text-shadow: 2px 2px 4px #000000;
+            line-height: 35px;
+            font-size: 28px;
+            font-family: Montserrat-Bold;
         }
 
         .headertext2mob {
+
+            width: 80%;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff !important;
+            line-height: 25px;
             font-size: 16px;
-            font-family: source-sans-pro, sans-serif;
-            color: #58585A;
-            font-weight: 900;
-            line-height: 19px;
-            background-color: transparent;
-            text-align: center;
-        }
-
-        .headertext3mob {
-            background-color: transparent;
-            color: #58585A;
-            text-align: center;
-            font-size: 14px;
-            line-height: 17px;
-            font-family: source-sans-pro, sans-serif;
             font-weight: 600;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px #000000;
+            margin: 0 auto;
         }
 
-        .headertext4mob {
-            font-family: source-sans-pro, sans-serif;
-            font-size: 8px;
-            line-height: 10px;
-            background-color: transparent;
-            color: #58585A;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .headertext4footer {
-            color: white;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            text-align: center;
-            opacity: 1;
-            line-height: 26px;
-            font-size: 22px;
-            margin: 0 10px;
-        }
-
-        .headertext4footermob {
-            color: white;
-            font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-            text-align: center;
-            opacity: 1;
-            line-height: 15px;
+        .headerbtn1mob {
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 10px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            -spacing: 1px;
+            display: inline-block;
+            -webkit-transition: all ease 0.3s;
+            -moz-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: 0px 18px 0px 18px;
             font-size: 12px;
-            margin: 0 10px;
-        }
-
-        .hovercolor:hover {
-            color: #284B7D;
-            text-decoration: underline;
-        }
-
-        .headertext4footer:hover {
-            text-decoration: underline;
-            color: #B6D4FF;
+            line-height: 40px;
         }
 
         .btn1:hover {
-            background-color: #333 !important;
-            color: #fff !important;
+            background-color: #FFF !important;
+            color: #142b51 !important;
             text-decoration: none;
+            font-weight: bold !important;
         }
 
         .btn2:hover {
-            color: #00abc9 !important;
+            color: #142b51 !important;
+            text-decoration: none;
+        }
+
+        .btn3:hover {
+            background-color: #FFF !important;
+            border: 2px solid #142b51;
+            color: #142b51 !important;
             text-decoration: none;
         }
 
@@ -643,8 +395,42 @@
 
         ol#vid-list li a:hover {
             text-decoration: none !important;
-            color: #00abc9 !important;
+            color: #142b51 !important;
 
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .fadeInUp {
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+            transition: all ease 0.3s;
         }
     </style>
 
@@ -653,77 +439,75 @@
 <body>
 
 
-    <!--desktop view-->
     <div class="d-none d-lg-block">
         <!--header-->
 
-        <!-- <div id="header-desktop"></div> -->
-        <div class="container-fluid position-relative p-0 colors">
+        <div id="header-desktop"></div>
+        <div class="container-fluid position-relative p-0 colors" style="margin-top: 102px;">
             <div class="pirate11">
                 <img class="head-img" src="images/slider-bg-3.jpg">
             </div>
             <div style="width:100%;display:flex;justify-content:center;">
                 <div class="heading"
                     style="position: absolute;align-items: center;top: -.0px;opacity: 0.85;text-align: center;">
-                    <div style="position: relative;height: 100%;">
+                    <div
+                        style="position: relative;height: 100%;background: linear-gradient(rgba(0, 17, 53,.35),rgba(0, 17, 53,.35));">
                         <div
                             style="width: 100%;/* justify-content: center; */position: absolute;top: 50%;transform: translateY(-50%);/* height: 100%; */">
-                            <h1
-                                style="color: #fff !important;text-shadow: 2px 2px 4px #000000;line-height: 66px;font-size: 67px;font-weight: bold;">
+                            <h1 class="fadeInUp"
+                                style="animation-duration: .7s;font-family: Montserrat-Bold;color: #fff !important;text-shadow: 2px 2px 4px #000000;line-height: 66px;font-size: 67px;font-weight: bold;">
                                 FULLY INDEPENDENT</h1>
-                            <h1 style="color: #fff !important;line-height: 34px;font-size: 26px;font-weight: 600;
-                                               margin-top: 20px;text-shadow: 2px 2px 4px #000000;">We're not beholden
+                            <h1 class="fadeInUp headertext">We're not beholden
                                 to any corporate agenda—our focus
                                 is your success<br>and clients enjoy direct access to the firm's owners.</h1>
                             <div style="margin-top: 30px;">
-                                <a style="margin-right: 20px;box-shadow: 2px 2px 4px #58585a; border-radius: 0px;font-family: Montserrat,sans-serif;font-weight: 600;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 19px;line-height: 53px;background-color: #00abc9;
-                                                color: #fff;" href="#" class="btn1">
-                                    <!-- <img src="images/watch-video.png" alt="Image" style="width: 37px; height: 26px;padding-right: 10px;"> -->
+                                <a class="fadeInUp btn1 headerbtn1" style="background-color: #142b51;color: #fff;
+                                                " href="#">
                                     WATCH VIDEO</a>
-                                <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 600;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 19px;line-height: 53px;background-color: #fff;
-                                                 color: #777;" href="#" class="btn1 flat-icon-check-1">
-                                    <!-- <img   src="images/1828640.svg" alt="Image"  style="width: 37px; height: 26px;padding-right: 10px;"> -->
+                                <a class="fadeInUp btn1 headerbtn1" style="background-color: #fff;color: #777;" href="#"
+                                    class=" flat-icon-check-1">
                                     WATCH VIDEO</a> */
                             </div>
-
-
                         </div>
                     </div>
-
-                    <!--             <h1 style="font-family: europhonic;text-align: center;font-size: -webkit-xxx-large;color: white;">Find The Perfect Vector Art For Your Next Creative Project</h1>-->
                 </div>
             </div>
         </div>
-        <div class="container " style="margin-top: 58px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                        <div style="display: flex;justify-content: center;align-items: center;width: 80%;">
-                            <h2
-                                style="font-style: normal;font-size: 20px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</h2>
+        <div class="container-fluid position-relative p-0 colors" style="background-color: #142b51;display: flex;
+        justify-content: center;">
+        <div class="row"
+            style="margin-bottom:0px;/* margin-top: 58px; */width: 100%;background-color: #142b51;margin-right: 0px;margin-left: 0px;">
+            <div class="container " style="/* margin-top: 58px; */margin-top: 20px;margin-bottom: 20px;">
+                <div class="row"
+                    style="background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                    <div style="margin: 10px 0px;width: 100%;">
+                        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+                            <div style="/* display: flex; */justify-content: center;align-items: center;width: 80%;">
+                                <h2 class="banner1text1">
+                                    Chris Stapleton
+                                </h2>
+                                <h2 class="banner1text2">
+                                    Go as a VIP for the ultimate concert experience!
+                                </h2>
+                            </div>
+                            <a href="#" class="bannerbooknow btn1 flat-icon-check-1">BOOK NOW</a>
                         </div>
-                        <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 13px;line-height: 53px;background-color: #00abc9;
-                         color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BUY NOW</a>
                     </div>
+                    <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
+                        </button> -->
                 </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
-                </button> -->
             </div>
         </div>
+    </div>
         <div class="container" style="margin-top:58px ;">
             <div class="row">
                 <div style="width: 100%;margin: 0 auto;display: flex;">
                     <div class="col-md-6">
                         <div style="width: 100%;">
                             <div style="text-align: left;">
-                                <h1 style="border-bottom: 5px solid #00abc9;width:65%;font-family: 'Montserrat', sans-serif;font-size: 48px;
-                                   font-weight: 700;margin-bottom: 5px;font-weight: bolder;
-                                   color: #2b323a;">About Bandhul</h1>
-                                <h1 style="margin-top: 10px;color: #777777;font-size: 18px;line-height: 28px;
-                                margin-top: 14px;">Finstreet is India’s First Personal Finance coaching institute. We
+                                <h1 class="aboutheading">WHAT FINSTREET IS ALL ABOUT</h1>
+                                <h1 class="aboutcontent">Finstreet is India’s First Personal Finance coaching institute.
+                                    We
                                     thrive for our students to learn the necessity of financial independence. We teach
                                     our students about the importance of starting to invest, how you can use money like
                                     a tool to accumulate assets for yourself. We empower our students to make better
@@ -732,8 +516,7 @@
                                     run. A plan for financial independence is the best gift you could give to your
                                     future self.</h1>
                                 <div style="margin-top: 20px;"></div>
-                                <a href="#" class="btn1" style="box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 10px 30px;font-size: 19px;font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;
-                                transition: all ease 0.3s;">READ MORE</a>
+                                <a href="#" class="aboutbtn btn3">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -749,8 +532,10 @@
             <div class="hr-line" style="width: 80%;margin: 0 auto;">
             </div>
         </div>
+        <div class="container-fluid position-relative p-0 colors" style=" margin-top: 58px;background-color: #041223;display: flex;
+        justify-content: center;">
         <div class="row"
-            style="margin-bottom:0px;margin-top: 58px;width: 100%;background-color: #20252b;margin-right: 0px;margin-left: 0px;">
+            style="margin-bottom:0px;width: 100%;background-color: #041223;margin-right: 0px;margin-left: 0px;">
             <div class="container">
                 <div class="row">
                     <div style="width: 100%;margin: 35px auto;display: flex;">
@@ -759,236 +544,227 @@
                                 <div style="display: flex;justify-content: center;">
                                     <video style="border: #fff 3px solid;" width="600" height="400px"
                                         src="images/VID-20200210-WA0000.mp4" autoplay="" loop="" controls=""
-                                        muted="muted" controlslist="nodownload" frameborder="0" allowfullscreen></video>
+                                        muted="muted" controlslist="nodownload" frameborder="0"
+                                        allowfullscreen=""></video>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5" style="display: flex;justify-content: center;align-items: center;">
                             <div style="text-align: center;">
                                 <img width="250px" src="images/Finstreet-min-logo-e1577219490712.png">
-                                <p style="margin-top: 20px;color: #fff; font-size: 20px;">Book Jordan Belfort for a Live
+                                <p
+                                    style="margin-top: 20px;color: #fff;font-size: 18px;font-family: 'Montserrat', sans-serif;">
+                                    Book Jordan Belfort for a Live
                                     Seminar,<br>Keynote, or a Private Consultation</p>
-                                <a href="#" style="box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 10px 30px;font-size: 13px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;
-                                transition: all ease 0.3s;">BOOK NOW!</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="container " style="margin-top: 58px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                        <div style="display: flex;justify-content: center;align-items: center;width: 80%;">
-                            <h2
-                                style="font-style: normal;font-size: 20px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</h2>
-                        </div>
-                        <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 13px;line-height: 53px;background-color: #00abc9;
-                                 color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BOOK NOW</a>
-                    </div>
-                </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
-                        </button> -->
-            </div>
-        </div>
-        <div class="container " style="margin-top: 58px;">
-            <div style="width: 80%;margin: 50px auto;display: flex;justify-content: center;">
-                <h1 style="border-bottom: 5px solid #00abc9;font-family: 'Montserrat', sans-serif;font-size: 48px;
-                        font-weight: 700;margin-bottom: 5px;font-weight: bolder;
-                        color: #2b323a;">COURSES</h1>
-            </div>
-            <div style="width: 100%;">
-                <div class="row" style="display: flex;justify-content: center;">
-                    <div class="col-md-4" style="display: flex;justify-content: center;">
-                        <div style="width: 100%;">
-                            <div class="container12"
-                                style="width: 100%;display: flex;justify-content: center;position: relative;">
-                                <img class="image" style="width: 360px; height: 233px;opacity: 1;
-                                        display: block; transition: .5s ease;backface-visibility: hidden; "
-                                    src="images/imagebox1.jpg" alt="Image">
-                                <div class="middle"
-                                    style="
-                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
-                                    <a href="#" style="text-decoration: none;">
-                                        <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
-                                        color: white;
-                                        font-size: 16px;font-family: Montserrat,sans-serif;
-                                        padding: 16px 32px; ">QUICK VIEW</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
-                                <a class="btn2" target="_blank" href="" style="font-size: 26px;
-                                    font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT
-                                    LOAN</a>
-                            </div>
-                            <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
-                                <p style="font-size: 16px;color: #777;
-                                    font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term growth
-                                    of your company</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="display: flex;justify-content: center;">
-                        <div style="width: 100%;">
-                            <div class="container12"
-                                style="width: 100%;display: flex;justify-content: center;position: relative;">
-                                <img class="image" style="width: 360px; height: 233px;opacity: 1;
-                                        display: block; transition: .5s ease;backface-visibility: hidden; "
-                                    src="images/imagebox1.jpg" alt="Image">
-                                <div class="middle"
-                                    style="
-                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
-                                    <a href="#" style="text-decoration: none;">
-                                        <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
-                                        color: white;
-                                        font-size: 16px;font-family: Montserrat,sans-serif;
-                                        padding: 16px 32px; ">QUICK VIEW</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
-                                <a class="btn2" target="_blank" href=""
-                                    style="font-size: 26px;
-                                        font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT LOAN</a>
-                            </div>
-                            <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
-                                <p style="font-size: 16px;color: #777;
-                                        font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term
-                                    growth of your company</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="display: flex;justify-content: center;">
-                        <div style="width: 100%;">
-                            <div class="container12"
-                                style="width: 100%;display: flex;justify-content: center;position: relative;">
-                                <img class="image" style="width: 360px; height: 233px;opacity: 1;
-                                        display: block; transition: .5s ease;backface-visibility: hidden; "
-                                    src="images/imagebox1.jpg" alt="Image">
-                                <div class="middle"
-                                    style="
-                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
-                                    <a href="#" style="text-decoration: none;">
-                                        <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
-                                        color: white;
-                                        font-size: 16px;font-family: Montserrat,sans-serif;
-                                        padding: 16px 32px; ">QUICK VIEW</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
-                                <a class="btn2" target="_blank" href=""
-                                    style="font-size: 26px;
-                                        font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT LOAN</a>
-                            </div>
-                            <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
-                                <p style="font-size: 16px;color: #777;
-                                        font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term
-                                    growth of your company</p>
+                                <a href="#" class="btn1 eventbtn">BOOK NOW!</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container " style="margin-top: 38px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                        <div style="display: flex;justify-content: center;align-items: center;width: 80%;">
-                            <h2
-                                style="font-style: normal;font-size: 20px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</h2>
-                        </div>
-                        <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 13px;line-height: 53px;background-color: #00abc9;
-                                 color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BOOK NOW</a>
-                    </div>
-                </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
-                        </button> -->
-            </div>
         </div>
+        <div class="container-fluid position-relative p-0 colors" style="background-color: #142b51;display: flex;
+        justify-content: center;">
         <div class="row"
-            style="margin-bottom:0px;margin-top: 58px;width: 100%;background-color: #20252b;margin-right: 0px;margin-left: 0px;">
+            style="margin-bottom:0px;/* margin-top: 58px; */width: 100%;background-color: #142b51;margin-right: 0px;margin-left: 0px;">
+            <div class="container " style="/* margin-top: 58px; */margin-top: 20px;margin-bottom: 20px;">
+                <div class="row"
+                    style="/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                    <div style="margin: 10px 0px;width: 100%;">
+                        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+                            <div style="/* display: flex; */justify-content: center;align-items: center;width: 80%;">
+                                <h2 class="banner1text1">
+                                    Chris Stapleton
+                                </h2>
+                                <h2 class="banner1text2">
+                                    Go as a VIP for the ultimate concert experience!
+                                </h2>
+                            </div>
+                            <a href="#" class="bannerbooknow btn1 flat-icon-check-1">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container "
+            style="margin-top: 58px;border: 4px solid white;box-shadow: 0.2px 3px 9px #0000008a;margin-bottom: 58px;border-radius: 20px;">
+            <div class="container " style="margin-top: 58px;">
+                <div style="width: 80%;margin: 50px auto;display: flex;justify-content: center;">
+                    <h1 class="courses">COURSES</h1>
+                </div>
+                <div style="width: 100%;">
+                    <div class="row" style="display: flex;justify-content: center;">
+                        <div class="col-md-4" style="display: flex;justify-content: center;">
+                            <div style="width: 100%;">
+                                <div class="container12"
+                                    style="width: 100%;display: flex;justify-content: center;position: relative;">
+                                    <img class="image" style="width: 360px; height: 233px;opacity: 1;
+                                        display: block; transition: .5s ease;backface-visibility: hidden; "
+                                        src="images/imagebox1.jpg" alt="Image">
+                                    <div class="middle"
+                                        style="
+                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
+                                        <a href="#" style="text-decoration: none;">
+                                            <div class="textcoursesview">QUICK VIEW</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
+                                    <a class="btn2 coursestext1" target="_blank" href="">INVESTMENT
+                                        LOAN</a>
+                                </div>
+                                <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
+                                    <p class="coursestext2">Secure the long-term growth
+                                        of your company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="display: flex;justify-content: center;">
+                            <div style="width: 100%;">
+                                <div class="container12"
+                                    style="width: 100%;display: flex;justify-content: center;position: relative;">
+                                    <img class="image" style="width: 360px; height: 233px;opacity: 1;
+                                        display: block; transition: .5s ease;backface-visibility: hidden; "
+                                        src="images/imagebox1.jpg" alt="Image">
+                                    <div class="middle"
+                                        style="
+                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
+                                        <a href="#" style="text-decoration: none;">
+                                            <div class="textcoursesview">QUICK VIEW</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
+                                    <a class="btn2 coursestext1" target="_blank" href="">
+                                        INVESTMENT LOAN</a>
+                                </div>
+                                <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
+                                    <p class="coursestext2">Secure the long-term
+                                        growth of your company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="display: flex;justify-content: center;">
+                            <div style="width: 100%;">
+                                <div class="container12"
+                                    style="width: 100%;display: flex;justify-content: center;position: relative;">
+                                    <img class="image" style="width: 360px; height: 233px;opacity: 1;
+                                        display: block; transition: .5s ease;backface-visibility: hidden; "
+                                        src="images/imagebox1.jpg" alt="Image">
+                                    <div class="middle"
+                                        style="
+                                        transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
+                                        <a href="#" style="text-decoration: none;">
+                                            <div class="textcoursesview">QUICK VIEW</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 20px; width: 100%;display: flex;text-align: left;">
+                                    <a class="btn2 coursestext1" target="_blank" href="">
+                                        INVESTMENT LOAN</a>
+                                </div>
+                                <div style="margin-top: 5px; width: 100%;display: flex;text-align: left;">
+                                    <p class="coursestext2">Secure the long-term
+                                        growth of your company</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"
+                style="margin-top: 20px;border-radius: 20px;background-color: #142b51;/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                <div class="container ">
+                    <!-- <div class="row" style="background-color: #212529;/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;"> -->
+                    <div style="margin: 15px 0px;width: 100%;">
+                        <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
+                            <div style="/* display: flex; */justify-content: center;align-items: center;width: 80%;">
+                                <h2 class="banner1text1">
+                                    Chris Stapleton
+                                </h2>
+                                <h2 class="banner1text2">
+                                    Go as a VIP for the ultimate concert experience!
+                                </h2>
+                            </div>
+                            <a href="#" class="coursebtn btn1 flat-icon-check-1">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid position-relative p-0 colors" style="background-color: #041223;display: flex;
+        justify-content: center;">
+        <div class="row"
+            style="margin-bottom:0px;/* margin-top: 58px; */width: 100%;background-color: #041223;margin-right: 0px;margin-left: 0px;">
             <div class="container">
                 <div class="row">
-                    <div style="width: 100%;margin: 35px auto;display: flex;justify-content: center;">
+                    <div style="width: 100%;margin: 65px auto;display: flex;justify-content: center;">
                         <div style="width: 60%;">
                             <div style="width: 100%;display: flex;justify-content: center;">
                                 <div style="display: flex;justify-content: center;">
                                     <iframe id="vid_frame" width="630" height="360"
                                         src="https://www.youtube.com/embed/SJgB4I0Yy4Y" frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                        allowfullscreen=""></iframe>
                                     <!-- <video style="border: #fff 3px solid;" width="630" height="360px"  src="images/VID-20200210-WA0000.mp4" autoplay="" loop="" controls="" muted="muted" controlslist="nodownload" frameborder="0" allowfullscreen></video> -->
-
                                 </div>
                             </div>
                         </div>
                         <div
-                            style="width: 35%;height: 360px; overflow: hidden;background-color: rgb(60, 74, 88);border: 3px solid #00abc9;">
+                            style="width: 35%;height: 360px; overflow: hidden;background-color: rgb(60, 74, 88);border: 3px solid #142b51;">
                             <ol id="vid-list" style="padding: 2px 0px;overflow: hidden;margin: 0px;
                                     list-style: none;">
-                                <li style="height: 70px;
-                                        padding: 4px 10px;">
+                                <li class="youtubetextli">
                                     <a href="javascript:void();"
                                         onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CPrLFes5vcg'">
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">What is a Stock Market Index | Personal Finance |
+                                        <div class="youtubetextdiv">
+                                            What is a Stock Market Index | Personal Finance |
                                             Finstreet</div>
                                     </a>
                                 </li>
-                                <li style="height: 70px;
-                                        padding: 4px 10px;">
+                                <li class="youtubetextli">
                                     <a href="javascript:void();"
                                         onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JAhKmw8wJKU'">
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">Learn about finance in 5 minutes | Personal Finance |
+                                        <div class="youtubetextdiv">
+                                            Learn about finance in 5 minutes | Personal Finance |
                                             Finstreet</div>
                                     </a>
                                 </li>
-                                <li style="height: 70px;
-                                        padding: 4px 10px;">
+                                <li class="youtubetextli">
                                     <a href="javascript:void();"
                                         onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/bTkjklDs2Q4'">
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">5 Types of Cryptocurrency Wallets that you can use |
+                                        <div class="youtubetextdiv">
+                                            5 Types of Cryptocurrency Wallets that you can use |
                                             Personal Finance | Finstreet</div>
                                     </a>
                                 </li>
 
-                                <li style="height: 70px;
-                                        padding: 4px 10px;">
+                                <li class="youtubetextli">
                                     <a href="javascript:void();"
                                         onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qJj2Rb2kWYs'">
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">7 Types of Insurance Policies you need to know about
+                                        <div class="youtubetextdiv">
+                                            7 Types of Insurance Policies you need to know about
                                             in India | Personal Finance</div>
                                     </a>
                                 </li>
                             </ol>
                             <a href="https://www.youtube.com/channel/UC9uE3NWbpg09xN8H5pmT4gQ" target="_blank"
                                 class="btn1"
-                                style="width: 100%;text-align: center;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 21px 0px;font-size: 19px;font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;align-items: center; ">WATCH
+                                style="letter-spacing: 2px !important;width: 100%;text-align: center;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 21px 0px;font-size: 24px;font-family: 'Montserrat', sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;align-items: center;">WATCH
                                 MORE VIDEO</a>
                         </div>
                     </div>
@@ -996,11 +772,11 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="container " style="margin-top: 58px;">
             <div style="width: 80%;margin: 50px auto;display: flex;justify-content: center;">
-                <h1 style="border-bottom: 5px solid #00abc9;font-family: 'Montserrat', sans-serif;font-size: 48px;
-                            font-weight: 700;margin-bottom: 5px;font-weight: bolder;
-                            color: #2b323a;">READ OUR BLOGS ON FINANCE</h1>
+                <h1 class="blogshead">
+                    READ OUR BLOGS ON FINANCE</h1>
             </div>
             <div class="row">
                 <div style="display: flex;align-items: center;
@@ -1008,109 +784,128 @@
                     <img style="    width: 550px;"
                         src="https://cdn.shopify.com/s/files/1/0277/0000/2904/files/cross-platform_720.png?v=1580262577">
                     <div style=" text-align: center;">
-                        <h1>Sales Training Like Never Before.</h1>
-                        <p style="font-size: 17px;  color: #777777;
-                                          font-weight: 500;">Straight Line Sales Corporate is a fully interactive,
+                        <h1 style="font-family: 'Montserrat', sans-serif;font-size: 30px;font-weight: 500;
+                            ">Sales Training Like Never Before.</h1>
+                        <p
+                            style="font-size: 17px;color: #777777;font-weight: 500;font-family: 'Montserrat', sans-serif;">
+                            Straight Line Sales Corporate is a fully interactive,
                             robust online sales training program. With over 75 easy-to-learn lessons, hundreds of hours
                             of immersive video, and industry-specific coaching, it's the closest thing in the world to
                             being trained by Jordan Belfort live, in-person, and one-on-one.</p>
-                        <a href="#" class="btn1"
-                            style="box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 10px 30px;font-size: 19px;font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;  transition: all ease 0.3s;">READ
-                            MORE</a>
+                        <a href="#" class="btn3 aboutbtn">READ MORE</a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid position-relative p-0 colors" style="margin-top:20px;background-color: #142b51;display: flex;
+        justify-content: center;">
         <div class="row"
-            style="margin-bottom:0px;margin-top: 58px;width: 100%;background-color: #00abc9;margin-right: 0px;margin-left: 0px;">
+            style="margin-bottom:0px;width: 100%;background-color: #142b51;margin-right: 0px;margin-left: 0px;">
             <div class="container">
                 <div class="row"
                     style="background-size: contain;background-position: center;justify-content: center;align-items: center;">
                     <div style="margin: 15px 0px;width: 100%;">
                         <div style="display: flex;justify-content: center;align-items: center;width: 100%;">
-                            <div style="display: flex;justify-content: center;align-items: center;width: 80%;">
-                                <span class='fas fa-donate' style='font-size:24px'></span>
+                            <div style="display: flex;justify-content: center;align-items: center;width: 78%;">
+                                <span class="fas fa-donate" style="font-size:24px"></span>
                                 <h2
-                                    style="font-style: normal;font-size: 20px;text-transform: uppercase;line-height: 1.5;color: #fff;font-weight: bold;">
+                                    style="font-family: 'Montserrat', sans-serif;margin-bottom: 0px;font-style: normal;font-size: 20px;text-transform: uppercase;line-height: 1.5;color: #fff;font-weight: 500;">
                                     PROFESSIONAL HELP IN PLANNING YOUR FINANCIAL FUTURE</h2>
                             </div>
-                            <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 27px 0px 33px;font-size: 19px;line-height: 53px;background-color: #fff;
-                                     color: #777;;" href="#" class="btn1 flat-icon-check-1">CONTACT US</a>
+                            <a href="#" class="btn1 contactusbtn flat-icon-check-1">CONTACT US TODAY</a>
                         </div>
                     </div>
-                    <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
-                            </button> -->
                 </div>
-
-
             </div>
         </div>
+        </div>
+
         <!--        footer-->
-        <!-- <div id="footer-desktop"></div> -->
+        <div id="footer-desktop"></div>
     </div>
 
 
 
-    <!-- mobile view -->
-
+    <!--desktop view-->
     <div class="d-lg-none">
         <!-- headermobile -->
-        <!-- <div id="header-mobile"></div> -->
-        <div class="container-fluid position-relative p-0 colors">
+        <div id="header-mobile"></div>
+        <div class="container-fluid position-relative p-0 colors" style="margin-top: 102px;">
             <div class="pirate11">
                 <img class="head-imgmob" src="images/slider-bg-3mob.jpg">
             </div>
             <div style="width:100%;display:flex;justify-content:center;">
                 <div class="heading"
                     style="position: absolute;align-items: center;top: -.0px;opacity: 0.85;text-align: center;">
-                    <div style="position: relative;height: 100%;">
+                    <div
+                        style="position: relative;height: 100%;background: linear-gradient(rgba(0, 17, 53,.3),rgba(0, 17, 53,.3));">
                         <div
                             style="width: 100%;/* justify-content: center; */position: absolute;top: 50%;transform: translateY(-50%);/* height: 100%; */">
-                            <h1
-                                style="color: #fff !important;text-shadow: 2px 2px 4px #000000;line-height: 35px;font-size: 28px;font-weight: bold;">
+                            <h1 class="headertext1mob">
                                 FULLY INDEPENDENT</h1>
-                            <h1 style="color: #fff !important;line-height: 25px;font-size: 16px;font-weight: 600;
-                                               margin-top: 20px;text-shadow: 2px 2px 4px #000000;">We're not beholden
+                            <h1 class="headertext2mob">We're not beholden
                                 to any corporate agenda—our focus
                                 is your success<br>and clients enjoy direct access to the firm's owners.</h1>
-                            <div style="margin-top: 30px;">
-                                <a style="margin-right: 20px;box-shadow: 2px 2px 4px #58585a; border-radius: 0px;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;background-color: #00abc9;
-                                                color: #fff;" href="#" class="btn1">
+                            <div
+                                style="margin-top: 30px !important;width: 100%;margin: 0 auto;text-align: center !important;display: flex;justify-content: center;">
+                                <a class="headerbtn1mob" style="
+                                                background-color: #142b51;
+                                                color: #fff;
+                                                " href="#" class="btn1">
                                     <!-- <img src="images/watch-video.png" alt="Image" style="width: 37px; height: 26px;padding-right: 10px;"> -->
                                     WATCH VIDEO</a>
-                                <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;background-color: #fff;
-                                                 color: #777;" href="#" class="btn1 flat-icon-check-1">
-                                    <!-- <img   src="images/1828640.svg" alt="Image"  style="width: 37px; height: 26px;padding-right: 10px;"> -->
+                                <a class="headerbtn1mob" style="
+                                                 background-color: #fff;
+                                                 color: #777;
+                                                 " href="#" class="btn1 flat-icon-check-1">
                                     WATCH VIDEO</a> */
                             </div>
-
-
                         </div>
                     </div>
-
-                    <!--             <h1 style="font-family: europhonic;text-align: center;font-size: -webkit-xxx-large;color: white;">Find The Perfect Vector Art For Your Next Creative Project</h1>-->
                 </div>
             </div>
         </div>
-        <div class="container " style="  margin-top: 20px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="justify-content: center;align-items: center;width: 100%;">
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <P
-                                style="font-style: normal;font-size: 16px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;text-align: center !important;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</P>
-                        </div>
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;background-color: #00abc9;
-                         color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                    alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BUY NOW</a>
+        <div class="row"
+            style="margin-bottom:0px;/* margin-top: 58px; */width: 100%;background-color: #142b51;margin-right: 0px;margin-left: 0px;">
+            <div class="container ">
+                <div class="row"
+                    style="background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                    <div style="margin: 15px 0px;width: 100%;">
+                        <div style="justify-content: center;align-items: center;width: 100%;">
+                            <div style="margin: 0 auto;width: 90%;/* display: flex; */justify-content: center;">
+                                <p
+                                    style="margin-bottom: 1px;font-style: normal;font-size: 18px;text-transform: uppercase;line-height: 1.5;/* color: #333333; *//* font-weight: bold; */text-align: center !important;color: #fff;font-family: Montserrat-Bold;">
+                                    Chris Stapleton</p>
+                                <p
+                                    style="margin-bottom: 10px;font-style: normal;font-size: 14px;text-transform: uppercase;line-height: 1.5;/* color: #333333; *//* font-weight: bold; */text-align: center !important;color: #fff;font-family: 'Montserrat', sans-serif;">
+                                    Go as a VIP for the ultimate concert experience!
+                                </p>
+                            </div>
+                            <div style="width: 100%;display: flex;justify-content: center;">
+                                <a style="
+                         color: #777;
+                         border-radius: 10px;
+                         box-shadow: 2px 2px 4px #58585a;
+                         font-family: Montserrat,sans-serif;
+                         font-weight: 500;
+                         -spacing: 1px;
+                         display: inline-block;
+                         -webkit-transition: all ease 0.3s;
+                         -moz-transition: all ease 0.3s;
+                         transition: all ease 0.3s;
+                         padding: 0px 18px 0px 18px;
+                         font-size: 12px;
+                         line-height: 40px;
+                         background-color: #142b51;
+                         /* color: #fff; */
+                         background-color: #fff;
+                         " href="#" class="btn1 flat-icon-check-1">BOOK NOW</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
+                    <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
                 </button> -->
+                </div>
             </div>
         </div>
         <div class="container" style="margin-top: 20px;">
@@ -1120,13 +915,25 @@
                         <div style="width: 100%;">
                             <div>
                                 <div style="display:flex;justify-content:center;">
-                                    <h1 style="text-align: center !important;text-align: center;border-bottom: 5px solid #00abc9;width: 68%;font-family: 'Montserrat', sans-serif;
-                                font-size: 30px;font-weight: 700;margin-bottom: 5px;font-weight: bolder;color: #2b323a;
-                                   ">About Bandhul</h1>
+                                    <h1 style="
+                                font-family: Montserrat-Bold;
+                                /* font-size: 28px; */
+                                font-weight: 700 !important;
+                                text-align: center !important;
+                                text-align: center;
+                                border-bottom: 5px solid #142b51;
+                                width: 70%;
+                                /* font-family: 'Montserrat', sans-serif; */
+                                font-size: 26px;
+                                font-weight: 700;
+                                margin-bottom: 5px;
+                                font-weight: bolder;
+                                color: #2b323a;
+                                ">ABOUT BANDHUL</h1>
                                 </div>
                                 <div>
                                     <h1
-                                        style="margin-left: 10px;text-align: center;margin-top: 10px;color: #777777;font-size: 15px;line-height: 28px;margin-top: 14px;margin-right: 10px;">
+                                        style="margin-left: 10px;text-align: center;margin-top: 10px;color: #777777;font-size: 15px;line-height: 28px;margin-top: 14px;margin-right: 10px;font-family: 'Montserrat', sans-serif;">
                                         Finstreet is India’s First Personal Finance coaching institute. We thrive for
                                         our students to learn the necessity of financial independence. We teach our
                                         students about the importance of starting to invest, how you can use money like
@@ -1134,32 +941,33 @@
                                         financial decisions. </h1>
                                 </div>
                                 <div style="margin-top: 20px;"></div>
-                                <div style="display:flex;justify-content:center;"><a href="#" class="btn1"
-                                        style="padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;">READ
+                                <div style="display:flex;justify-content:center;"><a href="#" class="btn3"
+                                        style="border-radius: 10px !important;padding: 0px 18px 0px 18px;font-size: 14px;line-height: 40px;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #142b51;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;">READ
                                         MORE</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-100" style="background-color: #142b51;margin-top: 25px;">
-                        <img src="images/Finstreet lllatestWeb Banner M-min.jpg" alt=""
-                            style="/* width: 575px; *//* height: 388px; */width: 100%;">
-                        <p style="margin-top: 0;background-color: #284B7D;width:100%;height:20px;"></p>
-                    </div>
+                  
 
                 </div>
             </div>
         </div>
+        <div class="w-100" style="background-color: #142b51;margin-top: 25px;">
+            <img src="images/Finstreet lllatestWeb Banner M-min.jpg" alt=""
+                style="/* width: 575px; *//* height: 388px; */width: 100%;">
+            <p style="margin-top: 0;background-color: #142b51;width:100%;height:20px;margin-bottom: 0PX;">
+            </p>
+        </div>
         <div class="row"
-            style="margin-bottom:0px;margin-top: 0px;width: 100%;background-color: #20252b;margin-right: 0px;margin-left: 0px;">
+            style="margin-bottom:0px;margin-top: 0px;width: 100%;background-color: #041223;margin-right: 0px;margin-left: 0px;">
             <div class="container">
                 <div class="row">
                     <div style="width: 100%;margin: 20px auto;/* display: flex; */">
                         <div class="w-100" style="display: flex;justify-content: center;">
                             <div style="width: 100%;display: flex;justify-content: center;">
                                 <div style="display: flex;justify-content: center;">
-                                    <video style="/* border: #fff 3px solid; */" width="80%" height="200px"
-                                        src="images/VID-20200210-WA0000.mp4" autoplay="" loop="" controls=""
-                                        muted="muted" controlslist="nodownload" frameborder="0"
+                                    <video width="80%" height="200px" src="images/VID-20200210-WA0000.mp4" autoplay=""
+                                        loop="" controls="" muted="muted" controlslist="nodownload" frameborder="0"
                                         allowfullscreen=""></video>
                                 </div>
                             </div>
@@ -1169,10 +977,12 @@
                             <div style="text-align: center;">
                                 <img width="200px" src="images/Finstreet-min-logo-e1577219490712.png"
                                     style="height: 65 !important;">
-                                <p style="margin-top: 20px;color: #fff;font-size: 16px;">Book Jordan Belfort for a Live
+                                <p
+                                    style="margin-top: 20px;color: #fff;font-size: 16px;font-family: 'Montserrat', sans-serif;">
+                                    Book Jordan Belfort for a Live
                                     Seminar,<br>Keynote, or a Private Consultation</p>
-                                <a href="#"
-                                    style="box-shadow: 2px 2px 4px #58585a;border-radius: 0px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;">BOOK
+                                <a class="btn1" href="#"
+                                    style="box-shadow: .2px .2px 2px #58585a;border-radius: 10px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;letter-spacing: 2px;">BOOK
                                     NOW!</a>
                             </div>
                         </div>
@@ -1181,32 +991,61 @@
                 </div>
             </div>
         </div>
-        <div class="container " style="  margin-top: 20px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="justify-content: center;align-items: center;width: 100%;">
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <P
-                                style="font-style: normal;font-size: 16px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;text-align: center !important;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</P>
-                        </div>
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;background-color: #00abc9;
-                         color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                    alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BUY NOW</a>
+        <div class="row"
+            style="margin-bottom:0px;/* margin-top: 58px; */width: 100%;background-color: #142b51;margin-right: 0px;margin-left: 0px;">
+            <div class="container ">
+                <div class="row"
+                    style="background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                    <div style="margin: 15px 0px;width: 100%;">
+                        <div style="justify-content: center;align-items: center;width: 100%;">
+                            <div style="margin: 0 auto;width: 90%;/* display: flex; */justify-content: center;">
+                                <p
+                                    style="margin-bottom: 1px;font-style: normal;font-size: 18px;text-transform: uppercase;line-height: 1.5;text-align: center !important;color: #fff;font-family: Montserrat-Bold;">
+                                    Chris Stapleton</p>
+                                <p
+                                    style="margin-bottom: 10px;font-style: normal;font-size: 14px;text-transform: uppercase;line-height: 1.5;/* color: #333333; *//* font-weight: bold; */text-align: center !important;color: #fff;font-family: 'Montserrat', sans-serif;">
+                                    Go as a VIP for the ultimate concert experience!
+                                </p>
+                            </div>
+                            <div style="width: 100%;display: flex;justify-content: center;">
+                                <a style="
+                         color: #777;
+                         border-radius: 10px;
+                         box-shadow: 2px 2px 4px #58585a;
+                         font-family: Montserrat,sans-serif;
+                         font-weight: 500;
+                         -spacing: 1px;
+                         display: inline-block;
+                         -webkit-transition: all ease 0.3s;
+                         -moz-transition: all ease 0.3s;
+                         transition: all ease 0.3s;
+                         padding: 0px 18px 0px 18px;
+                         font-size: 12px;
+                         line-height: 40px;
+                         background-color: #142b51;
+                         /* color: #fff; */
+                         background-color: #fff;
+                         " href="#" class="btn1 flat-icon-check-1">BOOK NOW</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
+                    <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
                 </button> -->
+                </div>
             </div>
         </div>
-        <div class="container " style="margin-top: 58px;">
-            <div style="width: 80%;margin: 50px auto;display: flex;justify-content: center;">
-                <h1 style="border-bottom: 5px solid #00abc9;font-family: 'Montserrat', sans-serif;font-size: 30px;
-                        font-weight: 700;margin-bottom: 5px;font-weight: bolder;
-                        color: #2b323a;">COURSES</h1>
+        <div class="container "
+            style="/* margin-top: 18px; */margin-top: 28px;border: 4px solid white;box-shadow: 0.2px 3px 9px #0000008a;margin-bottom: 58px;border-radius: 20px;WIDTH: 96%;">
+            <div style="width: 80%;margin: 30px auto;display: flex;justify-content: center;">
+                <h1 style="
+                        border-bottom: 5px solid #142b51;
+                        font-family: Montserrat-Bold;
+                        font-size: 34px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        font-weight: bolder;
+                        color: #2b323a;
+                        ">COURSES</h1>
             </div>
             <div style="width: 100%;">
                 <div class="row" style="justify-content: center;">
@@ -1227,7 +1066,7 @@
                                         transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
                                     <a href="#" style="text-decoration: none;">
                                         <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
+                                        background-color: #142b51;
                                         color: white;
                                         font-size: 16px;font-family: Montserrat,sans-serif;
                                         padding: 16px 32px; ">QUICK VIEW</div>
@@ -1235,15 +1074,20 @@
                                 </div>
                             </div>
                             <div
-                                style="margin-top: 20px;width: 94%;display: flex;text-align: left;justify-content: center;">
+                                style="margin-top: 20px;width: 100%;display: flex;text-align: left;justify-content: center;">
                                 <a class="btn2" target="_blank" href=""
                                     style="font-size: 26px;
                                         font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT LOAN</a>
                             </div>
                             <div
-                                style="margin-top: 5px;width: 100%;display: flex;text-align: left;justify-content: center;">
-                                <p style="font-size: 16px;color: #777;
-                                        font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term
+                                style="/* margin-top: 5px; */width: 100%;display: flex;/* text-align: left; */justify-content: center;">
+                                <p style="
+                                        font-size: 16px;
+                                        color: #777;
+                                        font-weight: 500;
+                                        font-family:'Montserrat',sans-serif;
+                                        TEXT-ALIGN: center;
+                                        ">Secure the long-term
                                     growth of your company</p>
                             </div>
                         </div>
@@ -1265,7 +1109,7 @@
                                         transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
                                     <a href="#" style="text-decoration: none;">
                                         <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
+                                        background-color: #142b51;
                                         color: white;
                                         font-size: 16px;font-family: Montserrat,sans-serif;
                                         padding: 16px 32px; ">QUICK VIEW</div>
@@ -1273,15 +1117,20 @@
                                 </div>
                             </div>
                             <div
-                                style="margin-top: 20px;width: 94%;display: flex;text-align: left;justify-content: center;">
+                                style="margin-top: 20px;width: 100%;display: flex;text-align: left;justify-content: center;">
                                 <a class="btn2" target="_blank" href=""
                                     style="font-size: 26px;
                                         font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT LOAN</a>
                             </div>
                             <div
-                                style="margin-top: 5px;width: 100%;display: flex;text-align: left;justify-content: center;">
-                                <p style="font-size: 16px;color: #777;
-                                        font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term
+                                style="/* margin-top: 5px; */width: 100%;display: flex;text-align: left;justify-content: center;">
+                                <p style="
+                                        font-size: 16px;
+                                        color: #777;
+                                        font-weight: 500;
+                                        font-family:'Montserrat',sans-serif;
+                                        TEXT-ALIGN: center;
+                                        ">Secure the long-term
                                     growth of your company</p>
                             </div>
                         </div>
@@ -1303,7 +1152,7 @@
                                         transition: .5s ease;opacity: 0; position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%); text-align: center;">
                                     <a href="#" style="text-decoration: none;">
                                         <div class="text" style="box-shadow: 2px 2px 4px #58585a;
-                                        background-color: #00abc9;
+                                        background-color: #142b51;
                                         color: white;
                                         font-size: 16px;font-family: Montserrat,sans-serif;
                                         padding: 16px 32px; ">QUICK VIEW</div>
@@ -1311,45 +1160,81 @@
                                 </div>
                             </div>
                             <div
-                                style="margin-top: 20px;width: 94%;display: flex;text-align: left;justify-content: center;">
-                                <a class="btn2" target="_blank" href=""
-                                    style="font-size: 26px;
-                                        font-weight: 700;font-family:'Montserrat',sans-serif;color: #2b323a;">INVESTMENT LOAN</a>
+                                style="margin-top: 20px;width: 100%;/* text-align: left; */justify-content: center;DISPLAY: flex;">
+                                <a class="btn2" target="_blank" href="" style="
+                                        font-size: 26px;
+                                        font-weight: 700;
+                                        font-family:'Montserrat',sans-serif;
+                                        color: #2b323a;
+                                        TEXT-ALIGN: center;
+                                        ">INVESTMENT LOAN</a>
                             </div>
                             <div
-                                style="margin-top: 5px;width: 100%;display: flex;text-align: left;justify-content: center;">
-                                <p style="font-size: 16px;color: #777;
-                                        font-weight: 500;font-family:'Montserrat',sans-serif;">Secure the long-term
+                                style="margin-top: px;width: 100%;display: flex;text-align: left;justify-content: center;">
+                                <p style="
+                                        font-size: 16px;
+                                        color: #777;
+                                        font-weight: 500;
+                                        font-family:'Montserrat',sans-serif;
+                                        TEXT-ALIGN: center;
+                                        ">Secure the long-term
                                     growth of your company</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container " style="  margin-top: 20px;">
-            <div class="row"
-                style="background: url('images/minimal-background-pattern-wordpress-12.webp');background-size: contain;background-position: center;justify-content: center;align-items: center;">
-                <div style="margin: 15px 0px;width: 100%;">
-                    <div style="justify-content: center;align-items: center;width: 100%;">
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <P
-                                style="font-style: normal;font-size: 16px;text-transform: uppercase;line-height: 1.5;color: #333333;font-weight: bold;text-align: center !important;">
-                                GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</P>
-                        </div>
-                        <div style="width: 100%;display: flex;justify-content: center;">
-                            <a style="border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;background-color: #00abc9;
-                         color: #fff;" href="#" class="btn1 flat-icon-check-1"><img src="images/1828640.svg"
-                                    alt="Image" style="width: 37px; height: 26px;padding-right: 10px;">BUY NOW</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
+                    <div class="container "
+                        style="background-color: #142b51;border: 4px solid white;box-shadow: 0.2px 3px 9px #0000008a;/* margin-bottom: 58px; */border-radius: 20px;/* margin-top: 20px; */color: #fff;">
+                        <div class="row"
+                            style="background-size: contain;background-position: center;justify-content: center;align-items: center;">
+                            <div style="margin: 15px 0px;width: 100%;">
+                                <div style="justify-content: center;align-items: center;width: 100%;">
+                                    <div style="width: 100%;display: flex;justify-content: center;">
+
+
+                                    </div>
+                                    <div style="justify-content: center;align-items: center;width: 100%;">
+                                        <div
+                                            style="margin: 0 auto;width: 90%;/* display: flex; */justify-content: center;">
+                                            <p
+                                                style="margin-bottom: 1px;font-style: normal;font-size: 18px;text-transform: uppercase;line-height: 1.5;text-align: center !important;color: #fff;font-family: Montserrat-Bold;">
+                                                Chris Stapleton</p>
+                                            <p
+                                                style="margin-bottom: 10px;font-style: normal;font-size: 14px;text-transform: uppercase;line-height: 1.5;/* color: #333333; *//* font-weight: bold; */text-align: center !important;color: #fff;font-family: 'Montserrat', sans-serif;">
+                                                Go as a VIP for the ultimate concert experience!
+                                            </p>
+                                        </div>
+                                        <div style="width: 100%;display: flex;justify-content: center;">
+                                            <a style="
+                         background-color: #00abc9;
+                         /* color: #777; */
+                         border-radius: 10px;
+                         box-shadow: 2px 2px 4px #58585a;
+                         font-family: Montserrat,sans-serif;
+                         font-weight: 500;
+                         -spacing: 1px;
+                         display: inline-block;
+                         -webkit-transition: all ease 0.3s;
+                         -moz-transition: all ease 0.3s;
+                         transition: all ease 0.3s;
+                         padding: 0px 18px 0px 18px;
+                         font-size: 15px;
+                         line-height: 40px;
+                         color: #fff;
+                         " href="#" class="btn1 flat-icon-check-1">BOOK NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="slider-button" onclick="window.location.href = 'quoteform';">Get a Free Quote
                 </button> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="row"
-            style="margin-bottom:0px;margin-top: 58px;width: 100%;background-color: #20252b;margin-right: 0px;margin-left: 0px;">
+            style="margin-bottom:0px;margin-top: 58px;width: 100%;background-color: #041223;margin-right: 0px;margin-left: 0px;">
             <div class="container">
                 <div class="row">
                     <div style="width: 100%;margin: 35px auto;justify-content: center;">
@@ -1366,7 +1251,7 @@
                             </div>
                         </div>
                         <div
-                            style="margin-top: 20px !important;margin: 0 auto;width: 90%;/* height: 360px; */overflow: hidden;background-color: rgb(60, 74, 88);border: 3px solid #00abc9;">
+                            style="margin-top: 20px !important;margin: 0 auto;width: 90%;/* height: 360px; */overflow: hidden;background-color: rgb(60, 74, 88);border: 3px solid #142b51;">
                             <ol id="vid-list" style="
                                     padding: 2px 0px;
                                     overflow: hidden;
@@ -1383,7 +1268,8 @@
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">What is a Stock Market Index | Personal Finance |
+                                        <div style="color: #fff;font-family: 'Montserrat', sans-serif;font-size: 15px;">
+                                            What is a Stock Market Index | Personal Finance |
                                             Finstreet</div>
                                     </a>
                                 </li>
@@ -1396,7 +1282,8 @@
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">Learn about finance in 5 minutes | Personal Finance
+                                        <div style="color: #fff;font-family: 'Montserrat', sans-serif;font-size: 15px;">
+                                            Learn about finance in 5 minutes | Personal Finance
                                         </div>
                                     </a>
                                 </li>
@@ -1409,7 +1296,8 @@
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">5 Types of Cryptocurrency Wallets that you can use |
+                                        <div style="color: #fff;font-family: 'Montserrat', sans-serif;font-size: 15px;">
+                                            5 Types of Cryptocurrency Wallets that you can use |
                                         </div>
                                     </a>
                                 </li>
@@ -1423,14 +1311,15 @@
                                         <span style="float: left;margin-right: 8px;">
                                             <img width="72"
                                                 src="https://img.youtube.com/vi/as0EL18bcuE/default.jpg"></span>
-                                        <div style="color: #fff;">7 Types of Insurance Policies you need to know about
+                                        <div style="color: #fff;font-family: 'Montserrat', sans-serif;font-size: 15px;">
+                                            7 Types of Insurance Policies you need to know about
                                             in India</div>
                                     </a>
                                 </li>
                             </ol>
                             <a href="https://www.youtube.com/channel/UC9uE3NWbpg09xN8H5pmT4gQ" target="_blank"
                                 class="btn1"
-                                style="width: 100%;text-align: center;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 21px 0px;font-size: 19px;font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;align-items: center; ">WATCH
+                                style="width: 100%;text-align: center;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;padding: 21px 0px;font-size: 22px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;align-items: center;">WATCH
                                 MORE VIDEO</a>
                         </div>
                     </div>
@@ -1441,7 +1330,7 @@
         <div class="container " style="margin-top: 22px;">
             <div style="width: 100%;margin: 20px auto;display: flex;justify-content: center;">
                 <h1
-                    style="width: 100%;border-bottom: 5px solid #00abc9;font-family: 'Montserrat', sans-serif;font-size: 26px;font-weight: 700;margin-bottom: 5px;font-weight: bolder;color: #2b323a;text-align: center;">
+                    style="width: 100%;border-bottom: 5px solid #142b51;font-family: Montserrat-Bold;font-size: 24px;font-weight: 700;margin-bottom: 5px;font-weight: bolder;color: #2b323a;text-align: center;">
                     OUR BLOGS ON FINANCE</h1>
             </div>
             <div class="row">
@@ -1451,29 +1340,36 @@
                     <img style="width: 98%;"
                         src="https://cdn.shopify.com/s/files/1/0277/0000/2904/files/cross-platform_720.png?v=1580262577">
                     <div style="text-align: center;margin-top: 20px;width: 96%;margin: 0 auto;">
-                        <h1 style="font-size: 26px;margin-top:20px;">Sales Training Like Never Before.</h1>
-                        <p style="font-size: 17px;color: #777777;font-weight: 400;">Straight Line Sales Corporate is a
+                        <h1
+                            style="/* font-size: 26px; */margin-top:20px;font-family: 'Montserrat', sans-serif;font-size: 28px;font-weight: 500;">
+                            Sales Training Like Never Before.</h1>
+                        <p
+                            style="font-size: 15px;color: #777777;font-weight: 500;font-family: 'Montserrat', sans-serif;">
+                            Straight Line Sales Corporate is a
                             fully interactive,
                             robust online sales training program. With over 75 easy-to-learn lessons, hundreds of hours
                             of immersive video, and industry-specific coaching, it's the closest thing in the world to
                             being trained by Jordan Belfort live, in-person, and one-on-one.</p>
                         <a href="#" class="btn1"
-                            style="box-shadow: 2px 2px 4px #58585a;padding: 0px 18px 0px 18px;font-size: 12px;border-radius: 0px;padding: 10px 30px;/* font-size: 19px; */font-family: Montserrat, sans-serif;font-weight: 600;letter-spacing: 1px;color: #fff;background-color: #00abc9;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;">READ
+                            style="border-radius: 10px !important;padding: 0px 18px 0px 18px;font-size: 14px;line-height: 40px;box-shadow: 2px 2px 4px #58585a;border-radius: 0px;font-family: Montserrat, sans-serif;font-weight: 500;letter-spacing: 1px;color: #fff;background-color: #142b51;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;">READ
                             MORE</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container " style="margin-top: 30px;">
-            <div class="row" style="background-color: #00abc9;/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;">
+            <div class="row"
+                style="background-color: #142b51;/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;">
                 <div style="margin: 15px 0px;width: 100%;">
                     <div style="justify-content: center;align-items: center;width: 100%;">
                         <div style="width: 100%;display: flex;justify-content: center;">
-                            <p style="color: #fff;font-style: normal;font-size: 16px;text-transform: uppercase;line-height: 1.5;/* color: #333333; */font-weight: bold;text-align: center !important;">
+                            <p
+                                style="color: #fff;font-style: normal;font-size: 16px;text-transform: uppercase;line-height: 1.5;text-align: center !important;font-family: 'Montserrat', sans-serif;font-weight: 500;">
                                 GET ACCESS TO JORDAN’S Interactive Coaching Workshop and Mindset Monday’s</p>
                         </div>
                         <div style="width: 100%;display: flex;justify-content: center;">
-                            <a style="background-color: #fff;color: #777;border-radius: 0px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;" href="#" class="btn1 flat-icon-check-1">CONTACT US</a>
+                            <a style="background-color: #fff;color: #777;border-radius: 10px;box-shadow: 2px 2px 4px #58585a;font-family: Montserrat,sans-serif;font-weight: 500;-spacing: 1px;display: inline-block;-webkit-transition: all ease 0.3s;-moz-transition: all ease 0.3s;transition: all ease 0.3s;padding: 0px 18px 0px 18px;font-size: 12px;line-height: 40px;"
+                                href="#" class="btn1 flat-icon-check-1">CONTACT US TODAY</a>
                         </div>
                     </div>
                 </div>
@@ -1481,7 +1377,7 @@
                 </button> -->
             </div>
         </div>
-<!--        
+        <!--        
         <div id="footer-mobile"></div> -->
 
     </div>
@@ -1493,6 +1389,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+
 
         // $("#vectform").on("submit",function(e){
         //     e.preventDefault();
@@ -1679,9 +1576,9 @@
 
         });
         //script for drawer
-        $("#header-desktop").load('templates/header-desktop.html');
+        $("#header-desktop").load('templates/header_finwin.html');
 
-        $("#footer-desktop").load('templates/footer-desktop.html');
+        $("#footer-desktop").load('templates/footer_finwin.html');
 
         $("#footer-mobile").load('templates/footer-mobile.html');
         $("#header-mobile").load('templates/header-mobile.html');
