@@ -2,7 +2,13 @@
 
 
 
-.nav-controls a {
+ html,
+        body {
+            height: 100%;           
+            
+        }
+
+        .nav-controls a {
             display: inline-block;
             list-style: none;
             text-decoration: none;
@@ -22,7 +28,7 @@
         }
 
         .first-container {
-            background: url(images/bg-woman-standing.jpg) no-repeat center center;
+            background: url() no-repeat center center;
             background-color: rgba(20, 18, 59, 0.603);
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -47,7 +53,7 @@
             transition: all 0.8s ease;
         }
 
-       .solid-nav {
+        .solid-nav {
             background-color: rgb(20, 26, 58);
             transition: background-color 0.2s linear;
         }
@@ -80,7 +86,8 @@
             font-weight: 600;
         }
 
-        
+
+
 
         .row {
             max-width: 1200px;
