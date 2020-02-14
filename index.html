@@ -1357,7 +1357,7 @@
                 </div>
             </div>
         </div>
-        <div class="container " style="margin-top: 30px;">
+        <div class="container-fluid p-0 position-relative " style="margin-top: 30px;">
             <div class="row"
                 style="background-color: #142b51;/* background: url('images/minimal-background-pattern-wordpress-12.webp'); */background-size: contain;background-position: center;justify-content: center;align-items: center;">
                 <div style="margin: 15px 0px;width: 100%;">
@@ -1390,192 +1390,6 @@
 
     <script type="text/javascript">
 
-
-        // $("#vectform").on("submit",function(e){
-        //     e.preventDefault();
-        // });
-
-        // script gor desk form submission
-        // $("#submit-desk").on("click", function () {
-        $("#vectform").on("submit", function (e) {
-            e.preventDefault();
-
-            var name = $("#name").val();
-
-            var Phone = $("#Phone").val();
-            var email = $("#email").val();
-            var error = "";
-
-            function validateEmail() {
-                var email = $("#email").val();
-                var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-                if (emailReg.test(email)) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-            if (name == "") {
-                $("#name").css('border-color', 'red');
-                $("#name").css('border-width', '2px');
-                $("#name").attr('placeholder', 'Required Field');
-                error = error + 'name';
-            } else {
-                $("#name").css('border-color', 'white');
-                $("#name").css('border-width', '1px');
-            }
-
-            if (Phone == "") {
-                $("#Phone").css('border-color', 'red');
-                $("#Phone").css('border-width', '2px');
-                $("#Phone").attr('placeholder', 'Required Field');
-                error = error + 'Phone';
-            } else {
-                $("#Phone").css('border-color', 'white');
-                $("#Phone").css('border-width', '1px');
-            }
-            if (validateEmail()) {
-                $("#email").css('border-color', 'white');
-                $("#email").css('border-width', '1px');
-
-            } else {
-                $("#email").css('border-color', 'red');
-                $("#email").css('border-width', '2px');
-                $("#email").attr('placeholder', 'Required Field');
-                error = error + 'email';
-            }
-
-            if (error == "") {
-                // alert("no error");
-
-                $.ajax({
-                    type: 'POST',
-                    url: 'contactdesk.php',
-                    dataType: "json",
-                    data: {
-
-                        "name": name,
-                        "Phone": Phone,
-                        "email": email,
-                    },
-
-                    success: function (data) {
-                        // alert("funtion");
-                        if (data.status == 201) {
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({ 'event': 'contact-form' });
-                            // alert("checked out");
-                            $("#contact-success-desktop").css('display', 'block');
-                            $("#formdesk").css('display', 'none');
-                            $("#ticket-id-desktop").html('#' + data.id);
-
-                        } else if (data.status == 601) {
-                            console.log(data.error);
-                            // alert("funtion");
-                            // alert("problem with query");
-                        } else {
-
-                        }
-                        // alert("Your form has been successfully submitted.")
-                    }
-                });
-            } else {
-                alert('There are error in the form. Please check your submissions');
-            }
-
-        });
-        // script gor mob form submission
-        // $("#submit-mob").on("click", function () {
-        $("#vectformmob").on("submit", function (e) {
-            e.preventDefault();
-
-            var namemob = $("#namemob").val();
-
-            var Phonemob = $("#Phonemob").val();
-            var emailmob = $("#emailmob").val();
-            var error = "";
-
-            function validateEmail() {
-                var email = $("#emailmob").val();
-                var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-                if (emailReg.test(email)) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-            if (namemob == "") {
-                $("#namemob").css('border-color', 'red');
-                $("#namemob").css('border-width', '2px');
-                $("#namemob").attr('placeholder', 'Required Field');
-                error = error + 'namemob';
-            } else {
-                $("#namemob").css('border-color', 'white');
-                $("#namemob").css('border-width', '1px');
-            }
-
-            if (Phonemob == "") {
-                $("#Phonemob").css('border-color', 'red');
-                $("#Phonemob").css('border-width', '2px');
-                $("#Phonemob").attr('placeholder', 'Required Field');
-                error = error + 'Phonemob';
-            } else {
-                $("#Phonemob").css('border-color', 'white');
-                $("#Phonemob").css('border-width', '1px');
-            }
-            if (validateEmail()) {
-                $("#emailmob").css('border-color', 'white');
-                $("#emailmob").css('border-width', '1px');
-
-            } else {
-                $("#emailmob").css('border-color', 'red');
-                $("#emailmob").css('border-width', '2px');
-                $("#emailmob").attr('placeholder', 'Required Field');
-                error = error + 'emailmob';
-            }
-
-            if (error == "") {
-                // alert("no error");
-
-                $.ajax({
-                    type: 'POST',
-                    url: 'contactdesk.php',
-                    dataType: "json",
-                    data: {
-
-                        "name": namemob,
-                        "Phone": Phonemob,
-                        "email": emailmob,
-
-
-                    },
-
-                    success: function (data) {
-                        // alert("funtion");
-                        if (data.status == 201) {
-                            window.dataLayer = window.dataLayer || [];
-                            window.dataLayer.push({ 'event': 'contact-form' });
-                            // alert("checked out");
-                            $("#contact-success-mobile").css('display', 'block');
-                            $("#vectformmob").css('display', 'none');
-                            $("#ticket-id-mobile").html('#' + data.id);
-
-                        } else if (data.status == 601) {
-                            console.log(data.error);
-                            // alert("funtion");
-                            // alert("problem with query");
-                        } else {
-
-                        }
-                        // alert("Your form has been successfully submitted.")
-                    }
-                });
-            } else {
-                alert('There are error in the form. Please check your submissions');
-            }
-
-        });
-        //script for drawer
         $("#header-desktop").load('templates/header_finwin.html');
 
         $("#footer-desktop").load('templates/footer_finwin.html');
@@ -1583,7 +1397,37 @@
         $("#footer-mobile").load('templates/footer_mobile.html');
         $("#header-mobile").load('templates/header_mobile_finwin.html');
     </script>
-    <script type="text/javascript">
+    <script>
+        $(document).ready(function () {
+    
+            $(window).scroll(function () {
+    
+                var height = $('.first-container').height();
+                var scrollTop = $(window).scrollTop();
+    
+                if (scrollTop >= height - 40) {
+                    $('.nav-container').addClass('solid-nav');
+                } else {
+                    $('.nav-container').removeClass('solid-nav');
+                }
+    
+            });
+        });
+    </script>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
+                document.getElementById("shrink").style.height = "80px";
+                
+            } else {
+                document.getElementById("shrink").style.height = "102px";
+            }
+        }
+    </script>
+    <!-- <script type="text/javascript">
         //script for drawer
         $("#drawer").css('display', 'none');
         $("#open-drawer").on("click", function () {
@@ -1599,7 +1443,7 @@
         $("#mobile-cross").on("click", function () {
             $("#drawer").css('display', 'none');
         });
-    </script>
+    </script> -->
 
 </body>
 
