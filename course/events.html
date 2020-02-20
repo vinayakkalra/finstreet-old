@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>events</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "Baloo";
+        }
+
+        input,
+        textarea {
+            padding: 0;
+            border: none;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex.center-v {
+            align-items: center;
+        }
+
+        .flex.center-h {
+            justify-content: center;
+        }
+
+        .flex.center-vh {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex.start {
+            justify-content: flex-start;
+        }
+
+        .flex.end {
+            justify-content: flex-end;
+        }
+
+        .flex.around {
+            justify-content: space-around;
+        }
+
+        .flex.between {
+            justify-content: space-between;
+        }
+
+        .flex.row {
+            flex-direction: row;
+        }
+
+        .flex.column {
+            flex-direction: column;
+        }
+
+        .flex.wrap {
+            flex-wrap: wrap;
+        }
+
+        .disable-select {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .clickable,
+        #calender-title,
+        #calender-panel,
+        #calender-buttons {
+            cursor: pointer;
+        }
+
+        .colorRed {
+            color: rgb(0, 0, 0);
+        }
+
+        .bgColorRed {
+            background-color: rgb(32, 32, 32);
+        }
+
+        .bgColorDarkRed {
+            background-color: #242424;
+        }
+
+        .width-full {
+            width: 100%;
+        }
+
+        .width-half {
+            width: 50%;
+        }
+
+        .width-3-4 {
+            width: 75%;
+        }
+
+        .width-1-4 {
+            width: 25%;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        #calender-wrapper {
+            position: relative;
+            border: 6px solid rgb(48, 48, 48);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #calender-panel {
+            z-index: 5;
+            position: relative;
+            background: rgb(71, 71, 71);
+            border-top: 6px solid rgb(48, 48, 48);
+            color: white;
+            font-size: 30pt;
+            height: 60px;
+        }
+
+        #calender-panel p {
+            padding-right: 20px;
+        }
+
+        #calender-panel p:hover {
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        #calender-title {
+            background: rgb(58, 58, 58);
+            color: white;
+            font-size: 30pt;
+            height: 60px;
+        }
+
+        #calender-title div {
+            height: 60px;
+            width: 60px;
+        }
+
+        #calender-title p {
+            height: 60px;
+            width: 150px;
+        }
+
+        #calender-title #left:hover span {
+            padding-right: 10px;
+            transition: .2s;
+        }
+
+        #calender-title #right:hover span {
+            padding-left: 10px;
+            transition: .2s;
+        }
+
+        #calender-content {
+            width: 700px;
+            padding: 10px;
+        }
+
+        #calender-panel #info {
+            border-right: 6px solid rgb(32, 32, 32);
+            height: 100%;
+            width: 75%;
+            font-size: 13pt;
+        }
+
+        #calender-panel #info div {
+            padding-left: 20px;
+            width: 100%;
+            height: 50%;
+        }
+
+        #calender-panel #info div p {
+            width: 50%;
+            height: 100%;
+            border-right: 6px solid rgb(44, 43, 43);
+        }
+
+        #calender-panel #clear {
+            height: 100%;
+            width: 25%;
+            line-height: 12px;
+            font-size: 14pt;
+            text-align: center;
+            transition: .4s;
+        }
+
+        #calender-panel #clear:hover {
+            background: #242424;
+        }
+
+        #calender-panel #clear p {
+            padding: 0;
+            margin: 0;
+        }
+
+        #calender-buttons {
+            margin-top: 20px;
+            width: 720px;
+            height: 60px;
+            background: rgb(59, 59, 59);
+            border: 6px solid rgb(37, 37, 37);
+            border-radius: 10px;
+            transition: .4s;
+        }
+
+        #calender-buttons:hover {
+            height: 70px;
+        }
+
+        #make-booking {
+            height: 100%;
+            font-size: 20pt;
+            color: white;
+        }
+
+        #remove-booking {
+            height: 100%;
+            font-size: 20pt;
+            color: white;
+        }
+
+        #calender-buttons div:hover {
+            background-color: #2c2b2b;
+        }
+
+        #booking-wrapper {
+            position: absolute;
+            height: 650px;
+            width: 720px;
+            background: white;
+            border-radius: 10px 10px 0 0;
+            margin-top: 150px;
+            transition: .4s;
+            overflow: hidden;
+        }
+
+        #booking-wrapper.opened {
+            margin-top: -645px;
+        }
+
+        #booking-title {
+            color: white;
+            font-size: 30pt;
+            height: 60px;
+            width: 100%;
+        }
+
+        #booking-form {
+            height: 685px;
+            width: 98%;
+            padding: 10px;
+            background: rgb(54, 54, 54);
+        }
+
+        #booking-form p {
+            margin: 20px 0 0 0;
+            color: white;
+            font-size: 14pt;
+        }
+
+        #booking-form>div:nth-child(1) p {
+            margin: 0;
+        }
+
+        #booking-form input {
+            height: 50px;
+        }
+
+        #booking-form textarea {
+            height: 270px;
+            resize: none;
+        }
+
+        #booking-form textarea,
+        input {
+            background: white;
+            color: rgb(56, 56, 56);
+            font-family: "Baloo";
+            font-size: 14pt;
+        }
+
+        #booking-form .width-3-4 {
+            border-right: 6px solid rgb(39, 39, 39);
+        }
+
+        .month {
+            width: 100px;
+            height: 100px;
+            transition: .4s;
+        }
+
+        #days p {
+            width: 100px;
+            text-align: center;
+            font-size: 15pt;
+        }
+
+        .month-selector {
+            width: 100%;
+            height: 100%;
+            transition: .4s;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .month-selector.clicked {
+            background: rgb(54, 54, 54);
+            color: white;
+        }
+
+        .month-selector.booked {
+            background: #313131;
+            color: white;
+            overflow: hidden;
+        }
+
+        .month-selector.booked:after {
+            content: 'X';
+            position: absolute;
+            margin-top: -3px;
+            font-size: 100pt;
+            font-family: "Ubuntu";
+            opacity: 0.1;
+        }
+
+        .month-selector.booked.clicked {
+            background: #2e2e2e;
+            color: white;
+            overflow: hidden;
+        }
+
+        .booked:hover {
+            z-index: 3;
+            height: 110px;
+            width: 110px;
+            background: #202020;
+            box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.14);
+            cursor: pointer;
+        }
+
+        .clickable:hover {
+            z-index: 3;
+            height: 110px;
+            width: 110px;
+            box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.14);
+            background: rgb(8, 8, 8);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid"
+        style="height: 400px; color: white; text-align: center;  background-image: url(images/calender_background.jpg); background-size: cover;">
+        <div>
+            <p style="padding-top: 10%;">
+                <h1>UPCOMING EVENTS</h1>
+            </p>
+            <p style="font-size: x-large;">GET ACESS TO BANDHUL'S INTERACTIVE COACHING WORKSHOP AND MINDSET MONDAY </p>
+            <div>
+                <button type="button" class="btn btn-warning" style="border-radius: 0%; width: 20%;"><b>Subscribe
+                        Now</b></button>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu" rel="stylesheet">
+
+        <div id="calender-wrapper">
+            <div id="calender-title" class="disable-select flex row center-v around">
+                <div id="left" class="flex row center-vh"><span>
+                        << /span>
+                </div>
+                <p class="flex row center-vh"></p>
+                <div id="right" class="flex row center-vh"><span>></span></div>
+            </div>
+            <div id="days" class="flex row center-vh colorRed disable-select">
+                <p>MON</p>
+                <p>TUE</p>
+                <p>WEDS</p>
+                <p>THURS</p>
+                <p>FRI</p>
+                <p>SAT</p>
+                <p>SUN</p>
+            </div>
+            <div id="calender-content" class="flex row wrap disable-select">
+            </div>
+            <div id="calender-panel" class="flex row center-v end">
+                <div id="info" class="flex column center-vh bgColorDarkRed">
+                    <div id="info-titles" class="flex row center-vh">
+                        <p class="flex column center-vh">Start Date</p>
+                        <p class="flex column center-vh">End Date</p>
+                    </div>
+                    <div class="flex row center-vh bgColorRed">
+                        <p class="flex column center-vh" id="startdate"></p>
+                        <p class="flex column center-vh" id="enddate"></p>
+                    </div>
+                </div>
+                <div id="clear" class="flex column center-vh bgColorDarkRed">
+                    <p>CLEAR SELECTION</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="calender-buttons" style="margin-left: 15%;" class="flex row center-vh wrap ">
+            <div id="make-booking" class="flex column center-vh width-half">
+                <p>MARK AVAILABLE</p>
+            </div>
+            <div id="remove-booking" class="flex column center-vh width-half">
+                <p>MARK UNAVAILABLE</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    var currentMonth = new Date().getMonth();
+    var currentYear = new Date().getFullYear();
+    var clickedDays = 0;
+    var bookingSteps = 0;
+    var lastClickedDay;
+    var startDate = "";
+    var endDate = "";
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+    var monthShortNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+    var bookedDates = [];
+    var selectedDates = [];
+
+    Date.prototype.addDays = function (days) {
+        var dat = new Date(this.valueOf())
+        dat.setDate(dat.getDate() + days);
+        return dat;
+    }
+    function clearCalender() {
+        clickedDays = 0;
+        $(".month div").removeClass("clicked");
+        $("#startdate").html("");
+        $("#enddate").html("");
+
+        startDate = "";
+        endDate = "";
+        selectedDates = [];
+        bookingSteps = 0;
+    }
+    function clearBooking() {
+        $("#booking-form input").val("");
+        $("#booking-form textarea").val("");
+
+        $("#booking-wrapper").removeClass("opened");
+        $("#make-booking").html("MAKE BOOKING ENQUIRY");
+
+
+    }
+    function daysInMonth(month) {
+        return new Date(currentYear, month, 0).getDate();
+    }
+    function displayCalender() {
+        var days = daysInMonth(currentMonth + 1);
+
+        $("#calender-title p").html(monthNames[currentMonth].toUpperCase());
+        $("#calender-content").html("");
+
+        for (var i = 1; i < firstDayOffset(new Date()); i++) {
+            $("#calender-content").append("<div class='month flex center-vh'></div>");
+        }
+        for (var i = 1; i <= days; i++) {
+            var day = new Date(currentYear, currentMonth, i).getDay();
+            var string = "<div class='month'><div id='" + dayNames[day] + "-" + i + "-" + monthNames[currentMonth] + "-" + currentYear + "'class='month-selector flex center-vh clickable' onclick='monthClick(this)'><p>" + i + "</p></div></div>";
+            $("#calender-content").append(string);
+        }
+
+        checkSelected();
+        checkBookings();
+    }
+    function monthClick(e) {
+        clickedDays += 1;
+
+        if (clickedDays == 1) {
+            $(e).toggleClass("clicked");
+            startDateIndex = parseInt($(e).attr('id').split('-')[1]);
+            startDate = new Date(currentYear, currentMonth, startDateIndex);
+        }
+        if (clickedDays > 1) {
+            endDateIndex = parseInt($(e).attr('id').split('-')[1]);
+            endDate = new Date(currentYear, currentMonth, endDateIndex);
+        }
+        if (endDate > startDate) {
+            var clicked = $(".clicked");
+            $(clicked).not(clicked[0]).removeClass("clicked");
+            $(e).toggleClass("clicked");
+
+            dateArray = getDates(startDate, endDate);
+            dateArray = formatDates(dateArray)
+            selectedDates = dateArray;
+
+            for (var i = 0; i < dateArray.length; i++) {
+                $("#" + dateArray[i]).addClass("clicked");
+            }
+        }
+        $("#startdate").html(startDate.toString().split(' ').slice(0, 4).join(' '));
+        $("#enddate").html(endDate.toString().split(' ').slice(0, 4).join(' '));
+    }
+    function firstDayOffset(date) {
+        return new Date(currentYear, currentMonth, 1).getDay();
+    }
+    function checkBookings() {
+        if (bookedDates != null) {
+            for (var i = 0; i < bookedDates.length; i++) {
+                var inner = bookedDates[i];
+                for (var j = 0; j < inner.length; j++) {
+                    $("#" + inner[j]).removeClass("clickable").delay(400).addClass("booked");
+                }
+            }
+        }
+    }
+    function checkSelected() {
+        selectedDates = getDates(startDate, endDate);
+        selectedDates = formatDates(selectedDates);
+
+        if (selectedDates != null) {
+            for (var i = 0; i < selectedDates.length; i++) {
+                $("#" + selectedDates[i]).addClass("clicked");
+            }
+        }
+    }
+    function addBooking() {
+        bookedDates.push(dateArray);
+        clearCalender();
+        displayCalender();
+    }
+    function formatDates(dates) {
+        if (dates != null) {
+            var newDateArray = [];
+            for (var i = 0; i < dates.length; i++) {
+                var date = "";
+                date += dayNames[dates[i].getDay()] + "-";
+                date += dates[i].getDate() + "-";
+                date += monthNames[dates[i].getMonth()] + "-";
+                date += dates[i].getFullYear();
+                newDateArray.push(date);
+            }
+            return newDateArray;
+        }
+        return null;
+    }
+    function getDates(startDate, stopDate) {
+        if (startDate != "" && endDate != "") {
+            var dateArray = new Array();
+            var currentDate = startDate;
+            while (currentDate <= stopDate) {
+                dateArray.push(new Date(currentDate))
+                currentDate = currentDate.addDays(1);
+            }
+            return dateArray;
+        }
+        return null;
+    }
+
+    $(function () {
+        displayCalender(currentMonth)
+        $("#date").append(new Date);
+    });
+
+    $("#left").on("click", function () {
+        if (currentMonth > 0)
+            currentMonth -= 1;
+        else {
+            currentMonth = 11;
+            currentYear -= 1;
+        }
+        displayCalender();
+    });
+    $("#right").on("click", function () {
+        if (currentMonth < 11)
+            currentMonth += 1;
+        else {
+            currentMonth = 0;
+            currentYear += 1;
+        }
+        displayCalender();
+    });
+    $("#clear").on("click", function () {
+        clearCalender();
+        clearBooking();
+    });
+    $("#make-booking").on("click", function () {
+        if (selectedDates != null && selectedDates.length > 0) {
+            bookingSteps += 1;
+
+            if (bookingSteps == 1) {
+                clearBooking();
+                addBooking();
+            }
+        }
+    });
+    $("#remove-booking").on("click", function () {
+        if (selectedDates != null && selectedDates.length > 0) {
+            bookingSteps += 1;
+
+            if (bookingSteps == 1) {
+                clearBooking();
+                addBooking();
+            }
+        }
+    });
+</script>
+
+</html>
